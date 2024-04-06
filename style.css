@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*Color*/
+
+    --Primary_Light_Cyan: hsl(193, 38%, 86%);
+    --Primary_Neon_Green: hsl(150, 100%, 66%);
+    --Neutral_Grayish_Blue: hsl(217, 19%, 38%);
+    --Neutral_Dark_Grayish_Blue: hsl(217, 19%, 24%);
+    --Neutral_Dark_Blue: hsl(218, 23%, 16%);
+
+    /*Body*/
+
+    --Font_size: 28px;
+
+    /*Font*/
+
+    --font-family: "Manrope", sans-serif;
+    --font-wight:800;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--Neutral_Dark_Blue);
+    font-size: var(--Font_size);
+    color: var(--Primary_Light_Cyan);
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-weight: var(--font-wight);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    align-content: center;
+    background-color: var(--Neutral_Dark_Grayish_Blue);
+    border-radius: 10px;
+    width: 490px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+
+.container > p {
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: var(--Primary_Neon_Green);
+    font-size: 12px;
+    letter-spacing: 2px;
+
+}
+
+.container > q {
+    place-items: center;
+    text-align: center;
+}
+
+.container > img{ 
+    margin-top: 30px;
+    width: 390px;
+    height: 13px;
+    margin-bottom: 30px;
+}
+
+button {
+    border: 1px solid var(--Primary_Neon_Green);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: var(--Primary_Neon_Green);
+    margin-bottom: -25px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    :root {
+        --Font_size: 18px;
+    }
+    
+    .container {
+        width: 300px;
+    }
+
+    .container > img {
+        width: 250px;
+        height: 13px;
+    }
+
+}
